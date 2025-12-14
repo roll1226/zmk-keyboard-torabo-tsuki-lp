@@ -90,6 +90,10 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        scroller {
+            layer = <3, 4>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        }
     };
 
     vbatt: vbatt {
@@ -98,7 +102,7 @@
     };
     non_lipo_battery: non_lipo_battery {
         compatible = "zmk,non-lipo-battery";
-        io-channels = <&adc 4>; 
+        io-channels = <&adc 4>;
     };
 };
 
