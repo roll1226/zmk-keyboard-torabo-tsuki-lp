@@ -1,17 +1,16 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
         compatible = "zmk,combos";
 
-        bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
-            layers = <2>;
+        singleQu {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <22 23>;
+            timeout-ms = <800>;
+            layers = <0>;
         };
     };
 
@@ -50,11 +49,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans   &trans   &trans        &trans        &trans                      &trans            &trans     &trans         &trans     &trans      &trans
-&trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                      &kp HOME          &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp ESCAPE  &trans
-&trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp LEFT          &kp DOWN   &kp UP_ARROW   &kp RIGHT  &kp TAB     &trans
-&trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
-&trans  &trans   &trans   &trans        &trans        &trans      &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
+&trans  &trans  &trans  &trans  &trans             &trans                                             &kp LC(LA(LG(LEFT_ARROW)))  &kp LC(LA(LG(DOWN_ARROW)))   &kp LA(LC(LG(RIGHT_ARROW)))     &trans                           &trans                    &trans
+&trans  &trans  &trans  &trans  &trans             &trans                                             &kp LG(LS(LA(LEFT_ARROW)))  &kp LS(LA(LG(RIGHT_ARROW)))  &kp LS(LA(LC(LG(LEFT_ARROW))))  &kp LS(LA(LC(LG(RIGHT_ARROW))))  &trans                    &trans
+&trans  &trans  &trans  &trans  &kp LA(LG(LC(Z)))  &kp LA(LC(LG(PERIOD)))  &trans  &trans             &kp LC(LG(LEFT))            &kp LC(LG(LS(DOWN)))         &kp LC(LG(LS(UP_ARROW)))        &kp LC(LG(RIGHT))                &kp LA(LC(LG(UP_ARROW)))  &trans
+&trans  &trans  &trans  &trans  &trans             &trans                  &trans  &kp LC(LA(LG(X)))  &kp LC(UP_ARROW)            &trans                       &trans                          &trans                           &trans                    &trans
+&trans  &trans  &trans  &trans  &trans             &trans                  &trans  &trans             &trans                      &trans                       &trans                          &trans                           &trans                    &trans
             >;
         };
     };
