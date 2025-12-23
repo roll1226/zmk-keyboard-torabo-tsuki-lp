@@ -104,11 +104,11 @@
 
         layer_3 {
             bindings = <
-&trans        &trans  &trans  &trans  &trans             &trans                                             &trans                      &trans                       &trans                          &trans                           &trans                    &trans
-&trans        &trans  &trans  &trans  &trans             &trans                                             &kp LC(LA(LG(LEFT_ARROW)))  &kp LC(LA(LG(DOWN_ARROW)))   &kp LA(LC(LG(RIGHT_ARROW)))     &trans                           &trans                    &trans
-&trans        &trans  &trans  &trans  &trans             &trans                  &trans  &trans             &kp LS(LA(LG(LEFT)))        &kp LS(LA(LG(RIGHT_ARROW)))  &kp LC(LG(LS(LA(LEFT_ARROW))))  &kp LC(LG(LA(LS(RIGHT_ARROW))))  &trans                    &trans
-&trans        &trans  &trans  &trans  &kp LC(LA(LG(Z)))  &kp LA(LC(LG(PERIOD)))  &trans  &trans             &kp LC(LG(LEFT_ARROW))      &kp LG(LS(LC(DOWN_ARROW)))   &kp LC(LG(LS(UP_ARROW)))        &kp LC(LG(RIGHT_ARROW))          &kp LA(LC(LG(UP_ARROW)))  &trans
-&kp CAPSLOCK  &trans  &trans  &trans  &trans             &trans                  &trans  &kp LC(LA(LG(X)))  &kp LC(UP_ARROW)            &trans                       &trans                          &trans                           &trans                    &trans
+&trans  &trans    &trans  &trans  &trans             &trans                                             &trans                      &trans                       &trans                          &trans                           &trans                    &trans
+&trans  &trans    &trans  &trans  &trans             &trans                                             &kp LC(LA(LG(LEFT_ARROW)))  &kp LC(LA(LG(DOWN_ARROW)))   &kp LA(LC(LG(RIGHT_ARROW)))     &trans                           &trans                    &trans
+&trans  &trans    &trans  &trans  &trans             &trans                  &trans  &trans             &kp LS(LA(LG(LEFT)))        &kp LS(LA(LG(RIGHT_ARROW)))  &kp LC(LG(LS(LA(LEFT_ARROW))))  &kp LC(LG(LA(LS(RIGHT_ARROW))))  &trans                    &trans
+&trans  &trans    &trans  &trans  &kp LC(LA(LG(Z)))  &kp LA(LC(LG(PERIOD)))  &trans  &trans             &kp LC(LG(LEFT_ARROW))      &kp LG(LS(LC(DOWN_ARROW)))   &kp LC(LG(LS(UP_ARROW)))        &kp LC(LG(RIGHT_ARROW))          &kp LA(LC(LG(UP_ARROW)))  &trans
+&trans  &kp CAPS  &trans  &trans  &trans             &trans                  &trans  &kp LC(LA(LG(X)))  &kp LC(UP_ARROW)            &trans                       &trans                          &trans                           &trans                    &trans
             >;
         };
 
