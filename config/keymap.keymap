@@ -84,11 +84,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans             &trans                             &trans          &trans           &trans        &trans                    &trans                     &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4             &kp N5                             &kp N6          &kp N7           &kp N8        &kp N9                    &kp N0                     &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp LA(LG(C))      &trans        &trans  &trans       &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW           &kp LG(LA(PERIOD))         &trans
-&trans  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &trans  &kp LS(F11)  &trans          &kp LS(LA(TAB))  &kp LA(TAB)   &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &trans
-&trans  &trans  &trans  &trans  &trans             &trans        &trans  &trans       &kp LA(SPACE)   &trans           &trans        &trans                    &trans                     &trans
+&trans  &trans  &trans  &trans  &trans             &trans                               &trans          &trans           &trans        &trans                    &trans                     &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4             &kp N5                               &kp N6          &kp N7           &kp N8        &kp N9                    &kp N0                     &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp LA(LG(C))      &kp LA(LC(F1))  &trans  &trans       &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW           &kp LG(LA(PERIOD))         &trans
+&trans  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN  &kp C_VOL_UP    &trans  &kp LS(F11)  &trans          &kp LS(LA(TAB))  &kp LA(TAB)   &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &trans
+&trans  &trans  &trans  &trans  &trans             &trans          &trans  &trans       &kp LA(SPACE)   &trans           &trans        &trans                    &trans                     &trans
             >;
         };
 
