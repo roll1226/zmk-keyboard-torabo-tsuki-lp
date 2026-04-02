@@ -81,7 +81,7 @@
         change_brandear_layer: change_brandear_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 5>;
+            bindings = <&bt BT_SEL 1 &to 0>;
             label = "CHANGE_BRANDEAR_LAYER";
         };
     };
@@ -131,21 +131,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans             &trans                  &trans  &trans  &trans                  &trans                  &trans            &trans                &trans             &trans  &trans
-&trans  &change_mac_layer  &change_brandear_layer  &trans  &trans  &trans                  &trans                  &trans            &trans                &trans             &trans  &trans
-&trans  &trans             &trans                  &trans  &trans  &trans  &trans  &trans  &kp LG(LA(LEFT_ARROW))  &kp LA(LG(DOWN))  &kp LA(LG(UP_ARROW))  &kp LA(LG(RIGHT))  &trans  &trans
-&trans  &trans             &trans                  &trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans                &trans             &trans  &trans
-&trans  &trans             &trans                  &trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans                &trans             &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans     &trans     &trans     &trans    &trans                          &trans  &trans  &trans     &trans    &trans    &trans
-&trans  &kp Q      &kp W      &kp E      &kp R     &kp T                           &kp Y   &kp U   &kp I      &kp O     &kp P     &trans
-&trans  &kp A      &kp S      &kp D      &kp F     &kp G   &trans     &trans       &kp H   &kp J   &kp K      &kp L     &kp SEMI  &trans
-&trans  &kp Z      &kp X      &kp C      &kp V     &kp B   &kp RCTRL  &kp LA(RET)  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &trans
-&trans  &kp LSHFT  &mkp RCLK  &mkp LCLK  &kp LGUI  &trans  &kp SPACE  &kp RET      &trans  &trans  &trans     &kp RALT  &trans    &trans
+&trans  &trans        &trans        &trans  &trans  &trans                  &trans                  &trans            &trans                &trans             &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans                  &trans                  &trans            &trans                &trans             &trans  &trans
+&trans  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &kp LG(LA(LEFT_ARROW))  &kp LA(LG(DOWN))  &kp LA(LG(UP_ARROW))  &kp LA(LG(RIGHT))  &trans  &trans
+&trans  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans                &trans             &trans  &trans
+&trans  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans                &trans             &trans  &trans
             >;
         };
     };
